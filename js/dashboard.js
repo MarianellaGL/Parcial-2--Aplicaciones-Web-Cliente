@@ -23,7 +23,6 @@ const getCountryName = async (code) => {
 };
 
 const searchName = async () => {
-  showSpinner(true);
   const queryName = document.getElementById("queryName").value.trim();
 
   if (!queryName) {
