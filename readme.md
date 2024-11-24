@@ -45,6 +45,9 @@ El sistema debe cumplir con los siguientes requisitos:
 
 - Respuesta: `{ "name": "alex", "country": [{ "country_id": "US", "probability": 0.25 }, { "country_id": "GB", "probability": 0.08 }] }`
 
+### 4- Extra
+- Se genero un tooltip que se ubique bajo el country-id para mayor legibilidad y entendimiento del usuario
+
 ## Tecnologías Utilizadas
 
 - **Frontend**: HTML, CSS, JavaScript.
@@ -52,3 +55,4 @@ El sistema debe cumplir con los siguientes requisitos:
   - [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
   - [Genderize](https://genderize.io/)
   - [Nationalize](https://nationalize.io/)
+  - [Rest Countries](https://restcountries.com/)
