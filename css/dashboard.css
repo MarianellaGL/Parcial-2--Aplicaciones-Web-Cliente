@@ -1,0 +1,9 @@
+.tooltip {
+  @apply fixed bg-black text-white text-sm rounded p-2 shadow-lg z-50;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

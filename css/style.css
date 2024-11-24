@@ -1,0 +1,59 @@
+.shadow-neo {
+  box-shadow: 8px 8px 0 0 black;
+}
+
+.focus\:ring-neo {
+  --tw-ring-color: black;
+}
+
+.focus\:ring-offset-neo {
+  --tw-ring-offset-width: 3px;
+  --tw-ring-offset-color: white;
+}
+
+button:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+input:focus {
+  border-color: #ff6347; /* Tomato red */
+}
+
+.inputcorrecto {
+  border-color: #38a169;
+  background-color: #f0fff4;
+}
+
+.inputincorrecto {
+  border-color: #e53e3e;
+  background-color: #fff5f5;
+}
+
+#InfoSubmit.showOK {
+  display: block;
+  background-color: #38a169;
+  color: white;
+  padding: 10px 20px;
+  border: 4px solid black;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 8px 8px 0 0 black;
+  margin-top: 10px;
+}
+
+#InfoSubmit.showBanned {
+  display: block;
+  background-color: #e53e3e;
+  color: white;
+  padding: 10px 20px;
+  border: 4px solid black;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 8px 8px 0 0 black;
+  margin-top: 10px;
+}

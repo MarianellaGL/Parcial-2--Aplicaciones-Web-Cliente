@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/deashboard.css">
+    <title>Encuentra tu nombre</title>
+</head>
+<body class="bg-gray-200">
+    <div class="p-6 max-w-4xl mx-auto ">
+        <div class="card p-6 mb-6 flex flex-col gap-4">
+            <h1 class="text-3xl font-bold mb-4">Encuentra tu nombre</h1>
+            <input 
+                type="text" 
+                id="queryName" 
+                placeholder="Buscá tu nombre" 
+                class="block w-full px-4 py-3 mt-2 border-4 border-black rounded-lg bg-yellow-300 text-black focus:outline-none focus:ring-neo focus:ring-offset-neo"
+            >
+            <button 
+                onclick="searchName()" 
+                class="button-primary p-2 w-full rounded hover:shadow-lg w-full bg-blue-500 text-black font-bold py-3 px-4 border-4 border-black rounded-lg hover:bg-blue-400 focus:outline-none focus:ring-neo focus:ring-offset-neo"
+            >
+                Buscá
+            </button>
+            <p id="result" class="mt-4 text-sm text-gray-600"></p>
+        </div>
+
+        <div id="results" class="card p-6 mb-6">
+            <h1 class="text-xl font-bold mb-4">Resultado</h1>
+            <div class="flex items-center justify-center bg-gray-200 overflow-x-auto">
+                <table class="table w-full text-left bg-white p-6 w-full border-4 border-black shadow-neo">
+                    <thead>
+                        <tr class="bg-yellow-400 text-black uppercase text-sm">
+                            <th class="p-4">Name</th>
+                            <th class="p-4">Count</th>
+                            <th class="p-4">Gender</th>
+                            <th class="p-4">Probability</th>
+                            <th class="p-4">Countries</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultsTableBody">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="card p-6">
+            <h1 class="text-xl font-bold mb-4">Últimos nombres buscados</h1>
+            <div id="lastSearched" class="flex flex-wrap gap-2">
+
+            </div>
+        </div>
+    </div>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
